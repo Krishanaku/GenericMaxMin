@@ -8,7 +8,7 @@ namespace Generics
 {
     public  class Maximum
     {
-        public static double MaximumfloatNum(double fNumber, double sNumber, double thirdNumber)
+        public static int MaximumString(int fNumber, int sNumber, int thirdNumber)
         {
             if ((fNumber.CompareTo(sNumber) > 0 && fNumber.CompareTo(thirdNumber) > 0) ||
                 (fNumber.CompareTo(sNumber) >= 0 && fNumber.CompareTo(thirdNumber) > 0) ||
@@ -33,6 +33,28 @@ namespace Generics
             }
             return fNumber;
         }
+
+        public static string MaximumString(string first, string second, string third)
+        {
+            if (first.Length > second.Length || first.Length > third.Length)
+            {
+                return "First is Greatest";
+            }
+            else if (second.Length > second.Length || second.Length > third.Length)
+            {
+                return "Second is Greatest";
+            }
+            else if (third.Length > first.Length || third.Length > second.Length)
+            {
+                return "Third is Greatest";
+            }
+            else
+            {
+                return "Every string is same";
+            }
+        }
+
+
 
     }
 }
