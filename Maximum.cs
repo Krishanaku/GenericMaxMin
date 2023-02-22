@@ -8,16 +8,16 @@ namespace Generics
 {
     public  class Maximum
     {
-        public static int MaximumIntNum(int fNumber, int sNumber, int thirdNumber)
+        public static double MaximumfloatNum(double fNumber, double sNumber, double thirdNumber)
         {
-            if((fNumber.CompareTo(sNumber) > 0 && fNumber.CompareTo(thirdNumber)>0) ||
-                (fNumber.CompareTo(sNumber) >=0 && fNumber.CompareTo(thirdNumber) > 0) ||
+            if ((fNumber.CompareTo(sNumber) > 0 && fNumber.CompareTo(thirdNumber) > 0) ||
+                (fNumber.CompareTo(sNumber) >= 0 && fNumber.CompareTo(thirdNumber) > 0) ||
                 (fNumber.CompareTo(sNumber) > 0 && fNumber.CompareTo(thirdNumber) >= 0))
             {
                 return fNumber;
             }
 
-            if ((sNumber.CompareTo(fNumber) > 0 && sNumber.CompareTo(thirdNumber) > 0 )||
+            if ((sNumber.CompareTo(fNumber) > 0 && sNumber.CompareTo(thirdNumber) > 0) ||
                (sNumber.CompareTo(fNumber) >= 0 && sNumber.CompareTo(thirdNumber) > 0) ||
                (sNumber.CompareTo(fNumber) > 0 && sNumber.CompareTo(thirdNumber) >= 0))
             {
