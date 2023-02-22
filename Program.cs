@@ -5,8 +5,12 @@
         public static void Main(string[] args) 
         {
             Console.WriteLine("Welcome to Generic Max Min Problem");
-            double max = Maximum.MaximumfloatNum(1.2, 4.5, 3.8);
-            Console.WriteLine("{0} Greatest than Two ", max);
+            string str = "Amit";
+            string str1 = "Sagar";
+            string str2 = "Krishna";
+
+            string Max = Maximum.MaximumString(str, str1, str2);
+            Console.WriteLine(Max);
 
 
 
