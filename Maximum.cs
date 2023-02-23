@@ -42,7 +42,14 @@ namespace Generics
             return fNumber;
         }
 
+        public T maxvalue()
+        {
+            T max = Maximum<T>.Maximum1(this.fNumber, this.sNumber, this.thirdNumber);
+            return max;
+        }
 
 
+
+
+        }
     }
-}
